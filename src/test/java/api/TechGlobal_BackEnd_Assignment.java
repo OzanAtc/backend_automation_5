@@ -32,6 +32,36 @@ public class TechGlobal_BackEnd_Assignment {
                 .when().get("https://tech-global-training.com/students/" + getId)
                 .then().log().all().extract().response();
 
+        response = RestAssured
+                .given().log().all()
+                .header("Content-Type", "application/json")
+                .body("{\n" +
+                        "    \"firstName\": \""+faker.name().firstName()+"\",\n" +
+                        "    \"lastName\": \""+faker.name().lastName()+"\",\n" +
+                        "    \"email\": \""+faker.internet().emailAddress() +"\",\n" +
+                        "    \"dob\": \"1992-12-15\"\n" +
+                        "}")
+                .when().put("https://tech-global-training.com/students/" + getId)
+                .then().log().all().extract().response();
+
+
+        response = RestAssured
+                .given().log().all()
+                .header("Content-Type", "application/json")
+                .body("{\n" +
+                        "    \"firstName\": \""+faker.name().firstName()+"\",\n" +
+                        "    \"lastName\": \""+faker.name().lastName()+"\",\n" +
+                        "    \"email\": \""+faker.internet().emailAddress() +"\",\n" +
+                        "    \"dob\": \"1992-12-15\"\n" +
+                        "}")
+                .when().patch("https://tech-global-training.com/students/" + getId)
+                .then().log().all().extract().response();
+
+        response = RestAssured
+                .given().log().all()
+                .when().delete("https://tech-global-training.com/students")
+                .then().log().all().extract().response();
+
 
 
 
