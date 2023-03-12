@@ -1,6 +1,6 @@
 package api.pojo_classes.go_rest;
 
-public class CreateGoRestUser {
+public class CreateGoRestUserWithoutLombok {
 
     /**
      * {
@@ -12,7 +12,7 @@ public class CreateGoRestUser {
      */
 
     private String name;
-    // when do you encapsulation it becomes as "being" - But people know that as POJO
+    // when do you encapsulation it becomes as "BEAN" - But people know that as POJO
     private String gender;
     private String email;
     private String status;

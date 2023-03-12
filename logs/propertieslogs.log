@@ -1,0 +1,38 @@
+[TRACE] 2023-03-11 14:17:03.902 [main] Log4jAppender - Logging with trace
+[DEBUG] 2023-03-11 14:17:03.904 [main] Log4jAppender - Logging with debug
+[INFO ] 2023-03-11 14:17:03.904 [main] Log4jAppender - Logging with info
+[WARN ] 2023-03-11 14:17:03.904 [main] Log4jAppender - Logging with debug
+[ERROR] 2023-03-11 14:17:03.904 [main] Log4jAppender - Logging with debug
+[FATAL] 2023-03-11 14:17:03.904 [main] Log4jAppender - Logging with debug
+[DEBUG] 2023-03-11 15:39:06.669 [main] GoRest - The name value should active but we found active
+[DEBUG] 2023-03-11 15:39:36.022 [main] GoRest - The name value should active but we found active
+[INFO ] 2023-03-11 16:24:29.884 [main] ReadingFromExcelFile - First name from the first cell is Tech Global
+[INFO ] 2023-03-11 16:29:46.051 [main] ReadingFromExcelFile - First name from the first cell is Tech Global
+[INFO ] 2023-03-11 16:29:46.053 [main] ReadingFromExcelFile - The second id value is 2.0
+[INFO ] 2023-03-11 16:29:46.053 [main] ReadingFromExcelFile - The last row number is 2
+[INFO ] 2023-03-11 16:33:53.521 [main] ReadingFromExcelFile - First name from the first cell is Tech Global
+[INFO ] 2023-03-11 16:33:53.524 [main] ReadingFromExcelFile - The second id value is 2.0
+[INFO ] 2023-03-11 16:33:53.524 [main] ReadingFromExcelFile - The last row number is 2
+[INFO ] 2023-03-11 16:33:53.524 [main] ReadingFromExcelFile - The last cell number from the file is 4
+[INFO ] 2023-03-11 17:05:58.423 [main] ReadingFromExcelFile - First name from the first cell is Tech Global
+[INFO ] 2023-03-11 17:05:58.428 [main] ReadingFromExcelFile - The second id value is 2.0
+[INFO ] 2023-03-11 17:05:58.428 [main] ReadingFromExcelFile - The last row number is 2
+[INFO ] 2023-03-11 17:05:58.429 [main] ReadingFromExcelFile - The last cell number from the file is 4
+[DEBUG] 2023-03-12 11:34:27.779 [main] GoRestWithLombok_SchemaValidation - The name value should Tech Global but we found Tech Global
+[INFO ] 2023-03-12 15:29:44.418 [main] TestingExcelUtil - Opening the excel file
+[INFO ] 2023-03-12 15:29:44.857 [main] ExcelUtil - FileReadData is exists !
+[INFO ] 2023-03-12 15:29:44.858 [main] ExcelUtil - SheetSheet1 is exists !
+[DEBUG] 2023-03-12 15:29:44.858 [main] TestingExcelUtil - File opened
+[INFO ] 2023-03-12 15:30:08.955 [main] TestingExcelUtil - Opening the excel file
+[DEBUG] 2023-03-12 15:30:08.958 [main] ExcelUtil -  ReadData and  Sheet1 cannot be found
+[DEBUG] 2023-03-12 15:30:08.958 [main] TestingExcelUtil - File opened
+[INFO ] 2023-03-12 15:40:26.506 [main] TestingExcelUtil - Opening the excel file
+[DEBUG] 2023-03-12 15:40:26.509 [main] ExcelUtil -  ReadData and  Sheet1 cannot be found
+[DEBUG] 2023-03-12 15:40:26.509 [main] TestingExcelUtil - File opened
+[INFO ] 2023-03-12 15:41:01.328 [main] TestingExcelUtil - Opening the excel file
+[DEBUG] 2023-03-12 15:41:01.330 [main] ExcelUtil -  ReadData and  Sheet1 cannot be found
+[DEBUG] 2023-03-12 15:41:01.330 [main] TestingExcelUtil - File opened
+[INFO ] 2023-03-12 15:41:50.538 [main] TestingExcelUtil - Opening the Excel file
+[INFO ] 2023-03-12 15:41:50.957 [main] ExcelUtil - FileReadData is exists !
+[INFO ] 2023-03-12 15:41:50.958 [main] ExcelUtil - SheetSheet1 is exists !
+[INFO ] 2023-03-12 15:41:50.975 [main] TestingExcelUtil - Cell value is 1.0
