@@ -24,12 +24,13 @@ public class TechGlobal_Api_Assignment {
     static Logger logger = LogManager.getLogger(TechGlobal_Api_Assignment.class);
     Faker faker = new Faker();
 
+    /*
     @BeforeTest
     public void setup() {
         RestAssured.baseURI = ConfigReader.getProperty("TechGlobalBaseURI");
     }
 
-
+     */
     @Test
     public void addStudent() {
 
@@ -38,7 +39,7 @@ public class TechGlobal_Api_Assignment {
                 .firstName("Thomas")
                 .lastName("Larsson")
                 .email(faker.internet().emailAddress())
-                .dob("2020-05-08")
+                .dob("2021-05-08")
                 .build();
 
         response =
@@ -49,8 +50,7 @@ public class TechGlobal_Api_Assignment {
                         .when().post(ConfigReader.getProperty("TechGlobalBaseURI"))
                         .then().log().all()
                         .assertThat().statusCode(200)
-                        .time(Matchers.lessThan(4000L))
-                        .body("firstName", equalTo("Thomas"))
+                        .time(Matchers.lessThan(2000L))
                         .extract().response();
 
         String expectedFirstName = createAStudent.getFirstName();
@@ -58,12 +58,30 @@ public class TechGlobal_Api_Assignment {
         logger.debug("The expected name is " + expectedFirstName + " is matching with " + actualFirstName);
 
         assertThat(
-                "A new user is created",
+                "Checking the first name's equality",
                 actualFirstName,
                 is(expectedFirstName)
                 );
 
+        String expectedLastName = createAStudent.getLastName();
+        String actualLastName = JsonPath.read(response.asString(), "lastName");
+        String expected_DOB = createAStudent.getDob();
+        String actual_DOB = JsonPath.read(response.asString(), "dob");
 
+        logger.debug("The expected last name is " + expectedLastName + " is matching with " + actualLastName);
+
+        assertThat(
+                "Checking the last name's equality",
+                actualLastName,
+                is(expectedLastName)
+        );
+
+        logger.debug("The expected DOB is " + expected_DOB + " is matching with " + actual_DOB);
+        assertThat(
+                "Checking dob's equality",
+                actual_DOB,
+                is(expected_DOB)
+        );
 
 
     }

@@ -22,6 +22,12 @@ public class ReadingExcelFile_Demo {
         XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
         XSSFSheet sheet = workbook.getSheet("Sheet1");
 
+        int lastRow = sheet.getLastRowNum();
+        logger.debug("The last row number is " + lastRow);
+
+
+
+
 
     }
 }
