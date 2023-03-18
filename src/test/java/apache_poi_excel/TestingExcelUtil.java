@@ -4,6 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import utils.ExcelUtil;
 
+import java.util.Arrays;
+
 public class TestingExcelUtil {
 
     private static Logger logger = LogManager.getLogger(TestingExcelUtil.class);
@@ -15,6 +17,9 @@ public class TestingExcelUtil {
             ExcelUtil.openExcelFile("ReadData", "Sheet1");
             String cellValue= ExcelUtil.getValue(1, 1);
             logger.info("Cell value is "+ cellValue);
+
+        System.out.println(" List of List " + ExcelUtil.getValues());
+        System.out.println(" MultiDimensional Array " + Arrays.deepToString(ExcelUtil.getExcelData(ExcelUtil.getValues())));
 
     }
 }
