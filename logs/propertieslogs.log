@@ -40,3 +40,10 @@
 [INFO ] 2023-03-18 12:56:20.342 [main] ExcelUtil - File ReadData is exist!
 [INFO ] 2023-03-18 12:56:20.344 [main] ExcelUtil - Sheet Sheet1 exist!
 [INFO ] 2023-03-18 12:56:20.363 [main] TestingExcelUtil - Cell value is 1.0
+[INFO ] 2023-03-18 14:13:00.805 [main] TestingExcelUtil - Opening the Excel file
+[INFO ] 2023-03-18 14:13:01.286 [main] ExcelUtil - File ReadData is exist!
+[INFO ] 2023-03-18 14:13:01.287 [main] ExcelUtil - Sheet Sheet1 exist!
+[INFO ] 2023-03-18 14:13:01.303 [main] TestingExcelUtil - Cell value is 1.0
+[INFO ] 2023-03-18 16:13:38.740 [main] AddPetToStoreWithLombok - Starting the test suite
+[INFO ] 2023-03-18 16:13:39.451 [main] ExcelUtil - File PetDataToRead is exist!
+[INFO ] 2023-03-18 16:13:39.453 [main] ExcelUtil - Sheet PetData exist!

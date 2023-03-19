@@ -19,7 +19,7 @@ public class TestingExcelUtil {
             logger.info("Cell value is "+ cellValue);
 
         System.out.println(" List of List " + ExcelUtil.getValues());
-        System.out.println(" MultiDimensional Array " + Arrays.deepToString(ExcelUtil.getExcelData(ExcelUtil.getValues())));
+        //System.out.println(" MultiDimensional Array " + Arrays.deepToString(ExcelUtil.getExcelData(ExcelUtil.getValues())));
 
     }
 }
