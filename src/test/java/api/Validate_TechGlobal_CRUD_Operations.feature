@@ -1,4 +1,6 @@
 
+@api
+
   Feature: As a QE, I validate the TechGlobal CRUD operations
 
     Scenario Outline: Validating the TechGlobal CRUD operations

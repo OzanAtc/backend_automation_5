@@ -28,4 +28,5 @@ public class databaseStepDef {
 
         Assert.assertEquals(DBUtil.getCellValue(mainQuery), new BigDecimal(expectedSalary));
     }
+
 }
