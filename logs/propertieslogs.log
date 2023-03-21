@@ -47,3 +47,6 @@
 [INFO ] 2023-03-18 16:13:38.740 [main] AddPetToStoreWithLombok - Starting the test suite
 [INFO ] 2023-03-18 16:13:39.451 [main] ExcelUtil - File PetDataToRead is exist!
 [INFO ] 2023-03-18 16:13:39.453 [main] ExcelUtil - Sheet PetData exist!
+[INFO ] 2023-03-21 11:41:54.311 [main] AddPetToStoreWithLombok - Starting the test suite
+[INFO ] 2023-03-21 11:41:55.282 [main] ExcelUtil - File PetDataToRead is exist!
+[INFO ] 2023-03-21 11:41:55.283 [main] ExcelUtil - Sheet PetData exist!

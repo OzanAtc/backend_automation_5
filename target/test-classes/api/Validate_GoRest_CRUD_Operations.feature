@@ -1,7 +1,7 @@
 
   Feature: As a QA tester, I validate the GoRest CRUD Operations
 
-  Scenario Outline: Validating GoRest CRUD Operations
+  Scenario Outline: Validating GoREST CRUD Operations
 
     Given Create an user with "<name>", email, "<gender>", "<status>", "<GoRestUrlPath>"
     Then Validate that status code is 201
@@ -20,10 +20,11 @@
     |name|Elvis|
     |gender|Male
 
+
     When I make a PATCH request with following data "<GoRestUrlPath>" with id
     Then Validate that status code is 200
 
     |name|Ricky|
 
     When I make a DELETE request with the "<GoRestUrlPath>" with id
-    Then Validate that status code is 204
+    Then Validate that status code is 200
