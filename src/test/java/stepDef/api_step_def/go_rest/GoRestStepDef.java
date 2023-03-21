@@ -105,5 +105,20 @@ public class GoRestStepDef {
                         .when().patch(goRestBaseUrl + urlPath + "/" + actualId)
                         .then().log().all()
                         .extract().response();
+
+
+    }
+
+    @When("I make a DELETE request with the {string} with id")
+    public void iMakeADELETERequestWithTheWithId(String urlPath) {
+
+        response =
+                RestAssured
+                        .given().log().all()
+                        .header("Authorization",ConfigReader.getProperty(token))
+                        .contentType(ContentType.JSON)
+                        .when().delete(goRestBaseUrl + urlPath + "/" + actualId)
+                        .then().log().all()
+                        .extract().response();
     }
 }

@@ -17,8 +17,8 @@
     When I make a PUT request with following data with "<GoRestUrlPath>"
     Then Validate that status code is 200
 
- |name|Elvis|
- |gender|Male
+    |name|Elvis|
+    |gender|Male
 
 
     When I make a PATCH request with following data "<GoRestUrlPath>" with id
@@ -26,5 +26,5 @@
 
     |name|Ricky|
 
-
-    When I
+    When I make a DELETE request with the "<GoRestUrlPath>" with id
+    Then Validate that status code is 200
