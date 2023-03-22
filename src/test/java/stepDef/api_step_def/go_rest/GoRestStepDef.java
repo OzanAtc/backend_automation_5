@@ -2,7 +2,6 @@ package stepDef.api_step_def.go_rest;
 
 import api.pojo_classes.go_rest.CreateGoRestUserWithLombok;
 import com.github.javafaker.Faker;
-import com.jayway.jsonpath.JsonPath;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
@@ -10,9 +9,7 @@ import io.restassured.http.ContentType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import utils.ConfigReader;
-import utils.Hooks;
 
-import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
 import static utils.Hooks.*;
@@ -38,7 +35,7 @@ public class GoRestStepDef {
 
         response = RestAssured
                 .given().log().all()
-                .header("Authorization", ConfigReader.getProperty(token))
+                .header("Authorization", token)
                 .contentType(ContentType.JSON)
                 .body(createGoRestUserWithLombok)
                 .when().post(goRestBaseUrl + urlPath)
@@ -57,7 +54,7 @@ public class GoRestStepDef {
                         .given().log().all()
                         .header("Authorization", ConfigReader.getProperty(token))
                         .contentType(ContentType.JSON)
-                        .when().get(goRestBaseUrl + urlPath + "/" + actualId)
+                        .when().get(goRestBaseUrl + urlPath + actualId)
                         .then().log().all()
                         .extract().response();
     }
@@ -80,7 +77,7 @@ public class GoRestStepDef {
                         .header("Authorization", ConfigReader.getProperty(token))
                         .contentType(ContentType.JSON)
                         .body(createGoRestUserWithLombok)
-                        .when().put(goRestBaseUrl + urlPath + "/" + actualId)
+                        .when().put(goRestBaseUrl + urlPath + actualId)
                         .then().log().all()
                         .extract().response();
 
@@ -102,7 +99,7 @@ public class GoRestStepDef {
                         .header("Authorization",ConfigReader.getProperty(token))
                         .contentType(ContentType.JSON)
                         .body(createGoRestUserWithLombok)
-                        .when().patch(goRestBaseUrl + urlPath + "/" + actualId)
+                        .when().patch(goRestBaseUrl + urlPath + actualId)
                         .then().log().all()
                         .extract().response();
 
@@ -117,7 +114,7 @@ public class GoRestStepDef {
                         .given().log().all()
                         .header("Authorization",ConfigReader.getProperty(token))
                         .contentType(ContentType.JSON)
-                        .when().delete(goRestBaseUrl + urlPath + "/" + actualId)
+                        .when().delete(goRestBaseUrl + urlPath + actualId)
                         .then().log().all()
                         .extract().response();
     }

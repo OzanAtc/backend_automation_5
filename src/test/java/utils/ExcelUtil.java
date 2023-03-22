@@ -34,8 +34,6 @@ public class ExcelUtil {
         } catch (Exception e) {
             logger.debug(fileName + " and " + sheetName + " cannot be found");
         }
-
-
     }
 
     // getting the single value from the Excel file

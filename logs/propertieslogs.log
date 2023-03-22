@@ -50,3 +50,57 @@
 [INFO ] 2023-03-21 11:41:54.311 [main] AddPetToStoreWithLombok - Starting the test suite
 [INFO ] 2023-03-21 11:41:55.282 [main] ExcelUtil - File PetDataToRead is exist!
 [INFO ] 2023-03-21 11:41:55.283 [main] ExcelUtil - Sheet PetData exist!
+[INFO ] 2023-03-21 19:51:49.565 [main] AddPetToStoreWithLombok - Starting the test suite
+[INFO ] 2023-03-21 19:51:49.569 [main] AddPetToStoreWithLombok - Starting the test suite
+[INFO ] 2023-03-21 19:52:01.685 [main] ExcelUtil - File PetDataToRead is exist!
+[INFO ] 2023-03-21 19:52:01.687 [main] ExcelUtil - Sheet PetData exist!
+[DEBUG] 2023-03-21 19:52:05.400 [main] GoRest - The name value should active but we found active
+[DEBUG] 2023-03-21 19:52:08.336 [main] GoRestWithLombok - The name value should Tech Global but we found Tech Global
+[INFO ] 2023-03-21 19:52:09.819 [main] Runner - 
+**************************************************************************************************************
+--------------------------------------   LOCAL PRETTY REPORT CREATED   ----------------------------------------
+Link: http://localhost:63342/backend_automation_5/target/cucumber-html-reports/overview-features.html
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************
+[INFO ] 2023-03-21 20:04:13.605 [main] AddPetToStoreWithLombok - Starting the test suite
+[INFO ] 2023-03-21 20:04:13.610 [main] AddPetToStoreWithLombok - Starting the test suite
+[DEBUG] 2023-03-21 20:04:17.349 [main] GoRest - The name value should active but we found active
+[DEBUG] 2023-03-21 20:04:20.321 [main] GoRestWithLombok - The name value should Tech Global but we found Tech Global
+[INFO ] 2023-03-21 20:04:23.338 [main] ExcelUtil - File PetDataToRead is exist!
+[INFO ] 2023-03-21 20:04:23.339 [main] ExcelUtil - Sheet PetData exist!
+[INFO ] 2023-03-21 20:04:34.959 [main] Runner - 
+**************************************************************************************************************
+--------------------------------------   LOCAL PRETTY REPORT CREATED   ----------------------------------------
+Link: http://localhost:63342/backend_automation_5/target/cucumber-html-reports/overview-features.html
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************
+[INFO ] 2023-03-21 20:24:52.974 [main] AddPetToStoreWithLombok - Starting the test suite
+[INFO ] 2023-03-21 20:24:52.977 [main] AddPetToStoreWithLombok - Starting the test suite
+[INFO ] 2023-03-21 20:24:55.830 [main] ExcelUtil - File PetDataToRead is exist!
+[INFO ] 2023-03-21 20:24:55.831 [main] ExcelUtil - Sheet PetData exist!
+[DEBUG] 2023-03-21 20:25:07.358 [main] GoRest - The name value should active but we found active
+[DEBUG] 2023-03-21 20:25:09.954 [main] GoRestWithLombok - The name value should Tech Global but we found Tech Global
+[INFO ] 2023-03-21 20:25:11.335 [main] Runner - 
+**************************************************************************************************************
+--------------------------------------   LOCAL PRETTY REPORT CREATED   ----------------------------------------
+Link: http://localhost:63342/backend_automation_5/target/cucumber-html-reports/overview-features.html
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************
+[INFO ] 2023-03-21 20:25:32.684 [main] AddPetToStoreWithLombok - Starting the test suite
+[INFO ] 2023-03-21 20:25:32.686 [main] AddPetToStoreWithLombok - Starting the test suite
+[DEBUG] 2023-03-21 20:25:35.414 [main] GoRest - The name value should active but we found active
+[DEBUG] 2023-03-21 20:25:37.974 [main] GoRestWithLombok - The name value should Tech Global but we found Tech Global
+[INFO ] 2023-03-21 20:25:39.965 [main] ExcelUtil - File PetDataToRead is exist!
+[INFO ] 2023-03-21 20:25:39.965 [main] ExcelUtil - Sheet PetData exist!
+[INFO ] 2023-03-21 20:25:50.878 [main] Runner - 
+**************************************************************************************************************
+--------------------------------------   LOCAL PRETTY REPORT CREATED   ----------------------------------------
+Link: http://localhost:63342/backend_automation_5/target/cucumber-html-reports/overview-features.html
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************
+[INFO ] 2023-03-21 20:34:34.023 [main] Runner - 
+**************************************************************************************************************
+--------------------------------------   LOCAL PRETTY REPORT CREATED   ----------------------------------------
+Link: http://localhost:63342/backend_automation_5/target/cucumber-html-reports/overview-features.html
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************

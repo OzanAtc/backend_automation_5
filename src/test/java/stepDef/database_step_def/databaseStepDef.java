@@ -17,7 +17,7 @@ public class databaseStepDef {
     }
     @When("user send {string} to database")
     public void user_send_to_database(String query) {
-        mainQuery = query;
+       // mainQuery = query;
         DBUtil.executeQuery(query);
     }
     @Then("Validate the {int}")

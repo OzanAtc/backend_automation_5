@@ -9,10 +9,67 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,743</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">225</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">runner.Runner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1677359980311</td><td rowspan="1">1263</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="3">runner.Runner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1679445273458</td><td rowspan="1">197</td></tr><tr class="failedeven"><td><a href="#m1">setupClass</a></td><td rowspan="1">1679445273660</td><td rowspan="1">10</td></tr><tr class="failedeven"><td><a href="#m2">tearDown</a></td><td rowspan="1">1679445273674</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">runner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Validate the minimum salary&quot;</td><td>&quot;Optional[Validate database connection]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">runner.Runner#setUpClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///Users/ozge/IdeaProjects/backend_automation_5/src/test/resources/api/Validate_TechGlobal_CRUD_Operations.feature
+(15:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;When I make a GET request with &quot;&lt;urlPath&gt;&quot; with id&apos;
+(16:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;Then Validate that status code is 200&apos;
+(19:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;When I make a PUT request with following data and with &quot;&lt;urlPath&gt;&quot;&apos;
+(23:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;Then Validate that status code is 200&apos;
+(26:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;When I make a PATCH request with following data and with &quot;&lt;urlPath&gt;&quot;&apos;
+(31:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;Then Validate that status code is 200&apos;
+(32:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;When I make a DELETE request with &quot;&lt;urlPath&gt;&quot; with id&apos;
+(33:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;Then Validate that status code is 200&apos;
+(20:7): inconsistent cell count within the table
+	at io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:52)
+	at io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:47)
+	at java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
+	at io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:75)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:60)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:53)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+	at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+	at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:108)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:23)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runner.Runner#setupClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///Users/ozge/IdeaProjects/backend_automation_5/src/test/resources/api/Validate_TechGlobal_CRUD_Operations.feature
+(15:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;When I make a GET request with &quot;&lt;urlPath&gt;&quot; with id&apos;
+(16:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;Then Validate that status code is 200&apos;
+(19:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;When I make a PUT request with following data and with &quot;&lt;urlPath&gt;&quot;&apos;
+(23:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;Then Validate that status code is 200&apos;
+(26:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;When I make a PATCH request with following data and with &quot;&lt;urlPath&gt;&quot;&apos;
+(31:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;Then Validate that status code is 200&apos;
+(32:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;When I make a DELETE request with &quot;&lt;urlPath&gt;&quot; with id&apos;
+(33:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got &apos;Then Validate that status code is 200&apos;
+(20:7): inconsistent cell count within the table
+	at io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:52)
+	at io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:47)
+	at java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
+	at io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:75)
+	at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:60)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:53)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+	at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+	at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:108)
+	at runner.Runner.setupClass(Runner.java:45)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">runner.Runner#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at runner.Runner.tearDown(Runner.java:53)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,4 +1,35 @@
 -------------------------------------------------------------------------------
 Test set: runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.013 s - in runner.Runner
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.07 s <<< FAILURE! - in runner.Runner
+setUpClass(runner.Runner)  Time elapsed: 0.661 s  <<< FAILURE!
+io.cucumber.core.gherkin.FeatureParserException: 
+Failed to parse resource at: file:///Users/ozge/IdeaProjects/backend_automation_5/src/test/resources/api/Validate_TechGlobal_CRUD_Operations.feature
+(15:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'When I make a GET request with "<urlPath>" with id'
+(16:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'Then Validate that status code is 200'
+(19:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'When I make a PUT request with following data and with "<urlPath>"'
+(23:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'Then Validate that status code is 200'
+(26:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'When I make a PATCH request with following data and with "<urlPath>"'
+(31:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'Then Validate that status code is 200'
+(32:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'When I make a DELETE request with "<urlPath>" with id'
+(33:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'Then Validate that status code is 200'
+(20:7): inconsistent cell count within the table
+
+setupClass(runner.Runner)  Time elapsed: 0.671 s  <<< FAILURE!
+io.cucumber.core.gherkin.FeatureParserException: 
+Failed to parse resource at: file:///Users/ozge/IdeaProjects/backend_automation_5/src/test/resources/api/Validate_TechGlobal_CRUD_Operations.feature
+(15:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'When I make a GET request with "<urlPath>" with id'
+(16:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'Then Validate that status code is 200'
+(19:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'When I make a PUT request with following data and with "<urlPath>"'
+(23:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'Then Validate that status code is 200'
+(26:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'When I make a PATCH request with following data and with "<urlPath>"'
+(31:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'Then Validate that status code is 200'
+(32:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'When I make a DELETE request with "<urlPath>" with id'
+(33:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #RuleLine, #Comment, #Empty, got 'Then Validate that status code is 200'
+(20:7): inconsistent cell count within the table
+	at runner.Runner.setupClass(Runner.java:45)
+
+tearDown(runner.Runner)  Time elapsed: 0.675 s  <<< FAILURE!
+java.lang.NullPointerException
+	at runner.Runner.tearDown(Runner.java:53)
+

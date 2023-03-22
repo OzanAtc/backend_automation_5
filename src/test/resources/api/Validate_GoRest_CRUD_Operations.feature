@@ -1,4 +1,5 @@
 
+@api
   Feature: As a QA tester, I validate the GoRest CRUD Operations
 
   Scenario Outline: Validating GoRest CRUD Operations
@@ -9,7 +10,7 @@
     Examples:
 
     |name|gender|status|GoRestUrlPath
-    |Hakki|Male |active|public/v2/users|
+    |Hakki|Male |active|public/v2/users/|
 
     When I make a GET request with the "<GoRestUrlPath>" with id
     Then Validate that status code is 200
